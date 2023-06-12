@@ -6,6 +6,7 @@ import { useToggleDispatch } from "../context/togglePopUp";
 import { useToggleModeDispatch } from "../context/toggleMode";
 import { useSearchDispatch, useSearch } from "../context/searchContext";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const toggleDispatch = useToggleDispatch();
@@ -25,6 +26,9 @@ const Home = () => {
   useEffect(() => {}, [search]);
   return (
     <div className="relative">
+      <Helmet>
+        <title>{"CRUD-Project"}</title>
+      </Helmet>
       <header className="bg-blue-400 p-[5px] flex justify-evenly">
         <div className="flex gap-[30px]  mx-auto w-[50%] p-[4px] justify-center">
           <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
