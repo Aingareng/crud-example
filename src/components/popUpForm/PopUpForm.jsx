@@ -185,49 +185,49 @@ const PopUpForm = () => {
     }
   }, [toggleDispatch, toggleMode]);
 
-  // const handleFieldValue = () => {
-  //   const product = {
-  //     productName: "",
-  //     purchasePrice: "",
-  //     sellingPrice: "",
-  //     productStock: 0,
-  //     productImage: {},
-  //   };
+  const handleFieldValue = () => {
+    const product = {
+      productName: "",
+      purchasePrice: "",
+      sellingPrice: "",
+      productStock: 0,
+      productImage: {},
+    };
 
-  //   if (fieldValue) {
-  //     product.productName = fieldValue.productName;
-  //     product.purchasePrice = fieldValue.purchasePrice;
-  //     product.sellingPrice = fieldValue.sellingPrice;
-  //     product.productStock = fieldValue.productStock;
-  //     product.productImage = fieldValue.productImage;
-  //   }
+    if (fieldValue) {
+      product.productName = fieldValue.productName;
+      product.purchasePrice = fieldValue.purchasePrice;
+      product.sellingPrice = fieldValue.sellingPrice;
+      product.productStock = fieldValue.productStock;
+      product.productImage = fieldValue.productImage;
+    }
 
-  //   const {
-  //     productName,
-  //     purchasePrice,
-  //     sellingPrice,
-  //     productStock,
-  //     productImage,
-  //   } = product;
-  //   const purchasePriceConvert = convertToNumber(purchasePrice);
-  //   const sellingPriceConvert = convertToNumber(sellingPrice);
-  //   setTimeout(() => {
-  //     return {
-  //       productName: "",
-  //       purchasePriceConvert: 0,
-  //       sellingPriceConvert: 0,
-  //       productStock: 0,
-  //       productImage: "",
-  //     };
-  //   }, 1000);
-  //   return {
-  //     productName,
-  //     purchasePriceConvert,
-  //     sellingPriceConvert,
-  //     productStock,
-  //     productImage,
-  //   };
-  // };
+    const {
+      productName,
+      purchasePrice,
+      sellingPrice,
+      productStock,
+      productImage,
+    } = product;
+    const purchasePriceConvert = convertToNumber(purchasePrice);
+    const sellingPriceConvert = convertToNumber(sellingPrice);
+    setTimeout(() => {
+      return {
+        productName: "",
+        purchasePriceConvert: 0,
+        sellingPriceConvert: 0,
+        productStock: 0,
+        productImage: "",
+      };
+    }, 1000);
+    return {
+      productName,
+      purchasePriceConvert,
+      sellingPriceConvert,
+      productStock,
+      productImage,
+    };
+  };
 
   useEffect(() => {
     handleToggleMode();
