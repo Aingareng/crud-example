@@ -52,7 +52,7 @@ const Home = () => {
         <ProductList />
         <button
           onClick={handleToggle}
-          className="  rounded-l-3xl  h-[80%] my-auto bg-sky-950 translate-x-8 ease-out duration-300 hover:-translate-x-[1px] "
+          className="  rounded-l-3xl  h-[60%] mt-[50px] bg-sky-950 translate-x-8 ease-out duration-300 hover:-translate-x-[1px] "
         >
           <p className="rotate-90 text-white p-[5px] ">+ Tambah Produk</p>
         </button>

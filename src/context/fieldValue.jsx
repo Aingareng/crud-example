@@ -11,9 +11,6 @@ const fieldValueReducer = (state, action) => {
   switch (action.type) {
     case "FIND":
       return { ...state, ...action.payload };
-
-    // default:
-    //   break;
   }
 };
 

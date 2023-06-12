@@ -41,6 +41,7 @@ export function uniquenessValidation(productName) {
   const validate = _.find(products, (item) => item.productName === productName);
   if (validate) {
     isUnique = true;
+    alert("Penginputan Salah, Cek Produk yang ingin diinput");
   }
   return { isUnique };
 }
