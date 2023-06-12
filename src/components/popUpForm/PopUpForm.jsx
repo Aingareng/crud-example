@@ -154,12 +154,17 @@ const PopUpForm = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (toggleMode === "create") {
-      createProduct();
-    }
-    if (toggleMode === "update") {
-      updateProduct();
+    if (stateInput.purchasePrice > stateInput.sellingPrice) {
+      alert("Harga jual lebih rendah dari harga beli");
+      return;
+    } else {
+      if (toggleMode === "create") {
+        createProduct();
+      }
+      if (toggleMode === "update") {
+        updateProduct();
+      }
+      return;
     }
   };
   function handleCancelButton(event) {
