@@ -52,6 +52,7 @@ const ProductList = () => {
 
     const res = handleProduct();
     setProducts(res);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search, toggle, product]);
 
   return (
@@ -73,7 +74,7 @@ const ProductList = () => {
           return (
             <SwiperSlide
               key={index}
-              className="flex gap-[24px] border-2 w-[30%] h-[70%]  "
+              className="flex gap-[24px] w-[30%] h-[70%]  "
             >
               <Card
                 productName={prod.productName}
